@@ -17,6 +17,7 @@ const Card = () => {
   const [items, setItems] = useState(Mdata);
   const [catItems, setcatItems] = useState(allCatValues);
   // console.log(catItems);
+
   const filterItems = (v) => {
     if (v === "ALL") {
       setItems(Mdata);
@@ -27,6 +28,7 @@ const Card = () => {
     });
     setItems(updatedItems);
   };
+
   return (
     <>
       <h1 className="mt-5 text-center main-heading">
